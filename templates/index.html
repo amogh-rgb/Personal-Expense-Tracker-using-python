@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="container">
+    <h1 class="mt-4">Expense Tracker</h1>
+    <a href="/add" class="btn btn-primary my-2">Add Expense</a>
+    <a href="/summary" class="btn btn-success my-2">View Summary</a>
+    <hr>
+    {% if expenses %}
+        <ul class="list-group">
+        {% for exp in expenses %}
+            <li class="list-group-item">
+                ₹{{ exp.amount }} — {{ exp.category }} on {{ exp.date }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No expenses yet. Start tracking!</p>
+    {% endif %}
+</body>
+</html>

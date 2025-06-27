@@ -1,0 +1,27 @@
+[
+    {
+        "amount": 5000.0,
+        "category": "chicken",
+        "date": "2005-08-02"
+    },
+    {
+        "amount": 6000.0,
+        "category": "Pg",
+        "date": "2026-06-02"
+    },
+    {
+        "amount": 1500.0,
+        "category": "tea",
+        "date": "2026-06-02"
+    },
+    {
+        "amount": 7000.0,
+        "category": "movie",
+        "date": "2025-06-27"
+    },
+    {
+        "amount": 5000.0,
+        "category": "Party",
+        "date": "2025-06-27"
+    }
+]

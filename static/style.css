@@ -1,0 +1,27 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9ff;
+    color: #2d3436;
+}
+
+h1, h2, h3 {
+    color: #6c5ce7;
+}
+
+.btn-primary {
+    background-color: #00cec9;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #01a3a4;
+}
+
+.list-group-item {
+    border-left: 5px solid #6c5ce7;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
